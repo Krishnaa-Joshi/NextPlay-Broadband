@@ -255,7 +255,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     try {
-      const res = await fetch("http://localhost:5000/api/get-connection", {
+       const API_BASE = "https://next-play-backend.vercel.app";
+      const res = await fetch(`${API_BASE}/api/get-connection`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
