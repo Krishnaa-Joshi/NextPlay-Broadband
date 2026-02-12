@@ -8,8 +8,14 @@ dotenv.config();
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
 app.use(express.json());
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+}));
+
+app.options("*", cors());
 
 app.get("/", (req, res) => {
   res.json({ message: "NextPlay Backend Running" });
