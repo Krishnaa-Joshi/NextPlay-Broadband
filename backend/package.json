@@ -1,8 +1,17 @@
 {
-	"dependencies": {
-		"cors": "^2.8.6",
-		"dotenv": "^17.2.3",
-		"express": "^5.2.1",
-		"nodemailer": "^7.0.12"
-	}
+  "name": "nextplay-backend",
+  "version": "1.0.0",
+  "description": "Backend server for NextPlay Broadband",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemailer": "^7.0.12"
+  }
 }
