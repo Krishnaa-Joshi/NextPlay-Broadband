@@ -8,9 +8,7 @@ dotenv.config();
 const app = express();
 const PORT = 5000;
 
-app.use(cors({
-  origin: "https://next-play-broadband.vercel.app"
-}));
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
