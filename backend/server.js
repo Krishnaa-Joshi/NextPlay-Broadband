@@ -11,6 +11,9 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({ message: "NextPlay Backend Running" });
+});
 
 // Get Connection 
 app.post("/api/get-connection", async (req, res) => {
