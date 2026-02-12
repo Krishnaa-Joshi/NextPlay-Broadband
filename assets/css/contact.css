@@ -1,0 +1,241 @@
+.contact-section {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.contact-container {
+  padding: 80px 16px;
+  max-width: 1140px;
+}
+
+.contact-header {
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+.contact-header h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  color: #000;
+  letter-spacing: -0.02em;
+}
+
+.contact-header h1 span {
+  color: #f11325;
+}
+
+.contact-subtitle {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.contact-hashtag {
+  margin-top: 16px;
+  color: #f11325;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.contact-cards {
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+
+  background: #fee2e2;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-info-icon {
+  background: #f11325;
+}
+
+.contact-info-icon img {
+  height: 28px;
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-info-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.contact-info-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.contact-desc {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.contact-highlight {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  color: #f11325;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.contact-highlight:hover {
+  text-decoration: underline;
+}
+
+.contact-meta {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+  border-radius: 14px;
+
+  background: #f11325;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px rgba(241, 19, 37, 0.35);
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #d90f20;
+  color: #ffffff;
+}
+
+.contact-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.contact-desc {
+  min-height: 48px; 
+}
+
+.contact-highlight {
+  min-height: 36px;
+}
+
+.contact-info-card {
+  height: 100%;
+}
+
+.contact-footer-note {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.contact-footer-note span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Animation */
+
+.contact-animate-title,
+.contact-animate-sub,
+.contact-animate-card-left,
+.contact-animate-card-right,
+.contact-animate-footer {
+  opacity: 0;
+}
+
+.contact-animate-title {
+  transform: scale(0.95);
+}
+
+.contact-animate-sub {
+  transform: translateY(20px);
+}
+
+.contact-animate-card-left {
+  transform: translateX(-40px);
+}
+
+.contact-animate-card-right {
+  transform: translateX(40px);
+}
+
+.contact-animate-footer {
+  transform: translateY(30px);
+}
+
+.contact-animate.show .contact-animate-title {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 2.8s ease;
+}
+
+.contact-animate.show .contact-animate-sub {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.7s ease 0.2s;
+}
+
+.contact-animate.show .contact-animate-card-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s ease 0.4s;
+}
+
+.contact-animate.show .contact-animate-card-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s ease 0.55s;
+}
+
+.contact-animate.show .contact-animate-footer {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease 0.8s;
+}

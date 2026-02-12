@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Next Play Broadband</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Custom Theme -->
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+    <link rel="stylesheet" href="../assets/css/faq.css">
+  </head>
+  <body data-page="faq"  class="no-gsap">
+    <!-- Loader -->
+    <div id="page-loader">
+      <img src="../assets/img/preloader.gif" alt="Loading" />
+    </div>
+
+    <!-- Navbar -->
+    <header class="site-header sticky-top">
+      <nav class="navbar-custom">
+        <div
+          class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between"
+        >
+          <!-- LOGO -->
+          <a href="../index.html" class="navbar-logo">
+            <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+          </a>
+
+          <!-- DESKTOP MENU -->
+          <ul class="nav-menu d-none d-lg-flex">
+            <li>z
+              <a href="../index.html" class="nav-link-custom" data-page="index">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/broadband-plans.html"
+                class="nav-link-custom"
+                data-page="broadband-plans"
+              >
+                Broadband Plans
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/about.html"
+                class="nav-link-custom"
+                data-page="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/Infographic.html"
+                class="nav-link-custom"
+                data-page="Infographic"
+              >
+                InfoGraphic
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/ourTeam.html"
+                class="nav-link-custom"
+                data-page="ourTeam"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="nav-link-custom"
+                id="openSpeedTest"
+              >
+                Speed Test
+              </a>
+            </li>
+          </ul>
+
+           <!-- ACCOUNT ICON (DESKTOP ONLY) -->
+          <div class="d-none d-lg-flex account-wrapper" id="accountToggle">
+            <div class="account-icon-box">
+              <img src="../assets/svgs/account.svg" alt="Account" />
+            </div>
+
+            <div class="account-text">
+              <span class="account-title">Account</span>
+            </div>
+          </div>
+
+          <!-- HAMBURGER (MOBILE ONLY) -->
+          <button class="menu-btn d-lg-none" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE SLIDE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../pages/broadband-plans.html">Broadband Plans</a></li>
+
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+
+          <li><a href="../pages/Infographic.html">InfoGraphic</a></li>
+          <li>
+            <a
+              href="../pages/ourTeam.html"
+              class="nav-link-custom"
+              data-page="ourTeam"
+            >
+              Our Team
+            </a>
+          </li>
+
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+
+          <li>
+            <a href="javascript:void(0)" id="openSpeedTestMobile">
+              Speed Test
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/getConnection.html" class="mobile-btn">
+              Get New Connection
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/login.html" class="mobile-btn secondary">
+              Customer Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <section class="faq-section faq-animate">
+      <div class="container">
+        <!-- Header -->
+        <div class="faq-header text-center faq-animate-head">
+          <h1>Frequently Asked <span>Questions</span></h1>
+          <p>
+            Everything you need to know about NetFix Fiber Broadband,
+            installation, plans, speeds, and support.
+          </p>
+        </div>
+
+        <!-- FAQ List -->
+        <div class="faq-list">
+          <!-- Question 1 -->
+          <div class="faq-item faq-animate-item">
+            <button class="faq-btn">
+              What is fiber broadband and how is it better than regular
+              broadband?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-content">
+              Fiber broadband uses optical fiber cables instead of copper wires,
+              delivering significantly higher speeds, lower latency, and more
+              stable connections. With NetFix Fiber, you get buffer-free
+              streaming, faster downloads, and consistent performance even
+              during peak hours.
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item faq-animate-item">
+            <button class="faq-btn">
+              How fast is NetFix broadband and which speed should I choose?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-content">
+              NetFix offers plans ranging from
+              <strong>200 Mbps to 400 Mbps</strong>. <br /><br />
+              • 200 Mbps – Ideal for families, online classes & HD streaming<br />
+              • 300 Mbps – Perfect for work-from-home & multiple devices<br />
+              • 400 Mbps – Best for 4K streaming, gaming & smart homes
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item faq-animate-item">
+            <button class="faq-btn">
+              How long does installation take?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-content">
+              Installation is usually completed within
+              <strong>24 hours</strong>. In many Gurugram sectors, same-day
+              installation is available depending on feasibility.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item faq-animate-item">
+            <button class="faq-btn">
+              Are there any data limits or Fair Usage Policy?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-content">
+              All NetFix plans come with generous data limits under Fair Usage
+              Policy (FUP). Even after FUP, speeds remain usable — ensuring
+              uninterrupted browsing, streaming, and work.
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item faq-animate-item">
+            <button class="faq-btn">
+              Do I get OTT apps with NetFix broadband plans?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-content">
+              Yes! Selected NetFix plans include complimentary access to popular
+              OTT platforms such as Netflix, Prime Video, Hotstar, and Sony LIV
+              — depending on the plan duration and speed.
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="faq-item faq-animate-item">
+            <button class="faq-btn">
+              What kind of customer support does NetFix provide?
+              <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-content">
+              NetFix offers <strong>24/7 local customer support</strong> in
+              Gurugram. No call centers, no bots — just real experts who resolve
+              issues quickly via call, WhatsApp, or service visits.
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="faq-cta text-center faq-animate-cta">
+          <p>Still have questions?</p>
+          <a href="contact.html" class="faq-btn-primary">
+            Contact NetFix Support
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-top">
+          <!-- Brand Details -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="footer-logo mb-4">
+              <div class="logo-box">
+                <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+              </div>
+            </div>
+
+            <p class="footer-desc">
+              Gurugram's trusted fiber broadband network. Connecting homes and
+              businesses with fast, reliable, and future-ready internet.
+            </p>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+              <a href="#"><img src="../assets/svgs/facebook.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/insta.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/linkedin.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/twitter.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/broadband-plans.html">Broadband Plans</a>
+              </li>
+              <li><a href="../pages/about.html">Why NetFix</a></li>
+              <li><a href="../pages/productDetails.html">Our Team</a></li>
+              <li><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">Pay Bill Online</a></li>
+              <li><a href="#">Raise a Ticket</a></li>
+              <li><a href="#">Track Request</a></li>
+              <li><a href="../pages/contact.html">Contact Us</a></li>
+              <li><a href="../pages/faq.html">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Contact Us</h5>
+            <ul class="footer-contact">
+              <li>
+                <span class="icon">📍</span>
+                <span>
+                  Cyber City, DLF Phase 3,<br />
+                  Gurugram, Haryana 122002
+                </span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span>+91 7011987504</span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span>info@nextplaybroadband.in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            © 2026 NetFix Broadband Pvt Ltd. All rights reserved.
+          </div>
+
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="account-modal" id="accountModal">
+      <div class="account-backdrop"></div>
+
+      <div class="account-box">
+        <h5 class="account-title">My Account</h5>
+
+        <a href="../pages/faq.html" class="account-btn secondary"> FAQ </a>
+
+        <a href="../pages/contact.html" class="account-btn secondary">
+          Contact Us
+        </a>
+
+        <a href="../pages/login.html" class="account-btn secondary">
+          Customer Login
+        </a>
+
+        <a href="../pages/getConnection.html" class="account-btn primary">
+          Get New Connection
+        </a>
+      </div>
+    </div>
+
+        <!-- SPEED TEST MODAL -->
+    <div class="speedtest-modal" id="speedTestModal">
+      <div class="speedtest-backdrop"></div>
+
+      <div class="speedtest-box">
+        <!-- Header -->
+        <div class="speedtest-header">
+          <h3>Internet Speed Test</h3>
+          <button class="speedtest-close" id="closeSpeedTest">&times;</button>
+        </div>
+
+        <!-- Content -->
+        <div class="speedtest-content">
+          <iframe
+            src="https://speed.cloudflare.com/"
+            loading="lazy"
+            title="Speed Test"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Next Play Broadband</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Custom Theme -->
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+  </head>
+  <body data-page="contact">
+    <!-- Loader -->
+    <div id="page-loader">
+      <img src="../assets/img/preloader.gif" alt="Loading" />
+    </div>
+
+    <!-- Navbar -->
+    <header class="site-header sticky-top">
+      <nav class="navbar-custom">
+        <div
+          class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between"
+        >
+          <!-- LOGO -->
+          <a href="../index.html" class="navbar-logo">
+            <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+          </a>
+
+          <!-- DESKTOP MENU -->
+          <ul class="nav-menu d-none d-lg-flex">
+            <li>
+              <a href="../index.html" class="nav-link-custom" data-page="index">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/broadband-plans.html"
+                class="nav-link-custom"
+                data-page="broadband-plans"
+              >
+                Broadband Plans
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/about.html"
+                class="nav-link-custom"
+                data-page="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/Infographic.html"
+                class="nav-link-custom"
+                data-page="Infographic"
+              >
+                InfoGraphic
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/ourTeam.html"
+                class="nav-link-custom"
+                data-page="ourTeam"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="nav-link-custom"
+                id="openSpeedTest"
+              >
+                Speed Test
+              </a>
+            </li>
+          </ul>
+
+          <!-- ACCOUNT ICON (DESKTOP ONLY) -->
+          <div class="d-none d-lg-flex account-wrapper" id="accountToggle">
+            <div class="account-icon-box">
+              <img src="../assets/svgs/account.svg" alt="Account" />
+            </div>
+
+            <div class="account-text">
+              <span class="account-title">Account</span>
+            </div>
+          </div>
+
+          <!-- HAMBURGER (MOBILE ONLY) -->
+          <button class="menu-btn d-lg-none" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE SLIDE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../pages/broadband-plans.html">Broadband Plans</a></li>
+
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+
+          <li><a href="../pages/Infographic.html">InfoGraphic</a></li>
+          <li>
+            <a
+              href="../pages/ourTeam.html"
+              class="nav-link-custom"
+              data-page="ourTeam"
+            >
+              Our Team
+            </a>
+          </li>
+
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+
+          <li>
+            <a href="javascript:void(0)" id="openSpeedTestMobile">
+              Speed Test
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/getConnection.html" class="mobile-btn">
+              Get New Connection
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/login.html" class="mobile-btn secondary">
+              Customer Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <section class="contact-section contact-animate">
+      <div class="container contact-container">
+        <!-- Header -->
+        <div class="contact-header text-center">
+          <h1 class="contact-animate-title">Get in Touch with <span>NetFix</span></h1>
+
+          <p class="contact-subtitle contact-animate-sub">
+            We’re always here to help you stay connected. Whether you need
+            assistance with broadband services, partnerships, or careers — our
+            teams are ready to support you.
+          </p>
+
+          <p class="contact-hashtag contact-animate-sub">#AlwaysConnected</p>
+        </div>
+
+        <div class="row justify-content-center g-4 contact-cards">
+          <!-- Phone Card -->
+          <div class="col-12 col-md-6 contact-animate-card-left">
+            <div class="contact-info-card d-flex flex-column h-100">
+              <div class="contact-card-body">
+                <div class="contact-info-icon">
+                  <img src="../assets/svgs/phone.svg" alt="Phone" />
+                </div>
+
+                <h3>Call Us Directly</h3>
+
+                <p class="contact-desc">
+                  Talk to our Gurugram-based support team for instant help
+                </p>
+
+                <a href="tel:+919660090100" class="contact-highlight">
+                  +91 7011987504
+                </a>
+
+                <p class="contact-meta">Available: 9 AM – 9 PM (All Days)</p>
+              </div>
+
+              <!-- CTA pinned to bottom -->
+              <div class="contact-card-footer mt-auto">
+                <a href="tel:+919660090100" class="contact-btn"> Call Now </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="col-12 col-md-6 contact-animate-card-right">
+            <div class="contact-info-card d-flex flex-column h-100">
+              <div class="contact-card-body">
+                <div class="contact-info-icon">
+                  <img src="../assets/svgs/mail.svg" alt="Email" />
+                </div>
+
+                <h3>Email Us</h3>
+
+                <p class="contact-desc">
+                  For queries, support, or new connection requests
+                </p>
+
+                <a
+                  href="mailto:support@netfixbroadband.in"
+                  class="contact-highlight break-all"
+                >
+                  info@nextplaybroadband.in
+                </a>
+
+                <p class="contact-meta">We usually respond within 24 hours</p>
+              </div>
+
+              <!-- CTA pinned to bottom -->
+              <div class="contact-card-footer mt-auto contact-animate-footer">
+                <a href="mailto:support@netfixbroadband.in" class="contact-btn">
+                  Send Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="contact-footer-note text-center">
+          Our teams usually respond within
+          <span>24 hours</span>. For urgent assistance, please call our
+          helpline.
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-top">
+          <!-- Brand Details -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="footer-logo mb-4">
+              <div class="logo-box">
+                <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+              </div>
+            </div>
+
+            <p class="footer-desc">
+              Gurugram's trusted fiber broadband network. Connecting homes and
+              businesses with fast, reliable, and future-ready internet.
+            </p>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+              <a href="#"><img src="../assets/svgs/facebook.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/insta.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/linkedin.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/twitter.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/broadband-plans.html">Broadband Plans</a>
+              </li>
+              <li><a href="../pages/about.html">Why NetFix</a></li>
+              <li><a href="../pages/productDetails.html">Our Team</a></li>
+              <li><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">Pay Bill Online</a></li>
+              <li><a href="#">Raise a Ticket</a></li>
+              <li><a href="#">Track Request</a></li>
+              <li><a href="../pages/contact.html">Contact Us</a></li>
+              <li><a href="../pages/faq.html">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Contact Us</h5>
+            <ul class="footer-contact">
+              <li>
+                <span class="icon">📍</span>
+                <span>
+                  Cyber City, DLF Phase 3,<br />
+                  Gurugram, Haryana 122002
+                </span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span>+91 7011987504</span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span>info@nextplaybroadband.in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            © 2026 NetFix Broadband Pvt Ltd. All rights reserved.
+          </div>
+
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="account-modal" id="accountModal">
+      <div class="account-backdrop"></div>
+
+      <div class="account-box">
+        <h5 class="account-title">My Account</h5>
+
+        <a href="../pages/faq.html" class="account-btn secondary"> FAQ </a>
+
+        <a href="../pages/contact.html" class="account-btn secondary">
+          Contact Us
+        </a>
+
+        <a href="../pages/login.html" class="account-btn secondary">
+          Customer Login
+        </a>
+
+        <a href="../pages/getConnection.html" class="account-btn primary">
+          Get New Connection
+        </a>
+      </div>
+    </div>
+
+    <!-- SPEED TEST MODAL -->
+    <div class="speedtest-modal" id="speedTestModal">
+      <div class="speedtest-backdrop"></div>
+
+      <div class="speedtest-box">
+        <!-- Header -->
+        <div class="speedtest-header">
+          <h3>Internet Speed Test</h3>
+          <button class="speedtest-close" id="closeSpeedTest">&times;</button>
+        </div>
+
+        <!-- Content -->
+        <div class="speedtest-content">
+          <iframe
+            src="https://speed.cloudflare.com/"
+            loading="lazy"
+            title="Speed Test"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

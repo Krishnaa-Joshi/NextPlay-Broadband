@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Next Play Broadband</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Custom Theme -->
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+    <link rel="stylesheet" href="../assets/css/ourTeam.css" />
+  </head>
+  <body data-page="ourTeam" class="no-gsap">
+    <!-- Loader -->
+    <div id="page-loader">
+      <img src="../assets/img/preloader.gif" alt="Loading" />
+    </div>
+
+    <!-- Navbar -->
+    <header class="site-header sticky-top">
+      <nav class="navbar-custom">
+        <div
+          class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between"
+        >
+          <!-- LOGO -->
+          <a href="../index.html" class="navbar-logo">
+            <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+          </a>
+
+          <!-- DESKTOP MENU -->
+          <ul class="nav-menu d-none d-lg-flex">
+            <li>
+              <a href="../index.html" class="nav-link-custom" data-page="index">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/broadband-plans.html"
+                class="nav-link-custom"
+                data-page="broadband-plans"
+              >
+                Broadband Plans
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/about.html"
+                class="nav-link-custom"
+                data-page="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/Infographic.html"
+                class="nav-link-custom"
+                data-page="Infographic"
+              >
+                InfoGraphic
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/ourTeam.html"
+                class="nav-link-custom"
+                data-page="ourTeam"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="nav-link-custom"
+                id="openSpeedTest"
+              >
+                Speed Test
+              </a>
+            </li>
+          </ul>
+
+          <!-- ACCOUNT ICON (DESKTOP ONLY) -->
+          <div class="d-none d-lg-flex account-wrapper" id="accountToggle">
+            <div class="account-icon-box">
+              <img src="../assets/svgs/account.svg" alt="Account" />
+            </div>
+
+            <div class="account-text">
+              <span class="account-title">Account</span>
+            </div>
+          </div>
+
+          <!-- HAMBURGER (MOBILE ONLY) -->
+          <button class="menu-btn d-lg-none" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE SLIDE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../pages/broadband-plans.html">Broadband Plans</a></li>
+
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+
+          <li><a href="../pages/Infographic.html">InfoGraphic</a></li>
+          <li>
+            <a
+              href="../pages/ourTeam.html"
+              class="nav-link-custom"
+              data-page="ourTeam"
+            >
+              Our Team
+            </a>
+          </li>
+
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+
+          <li>
+            <a href="javascript:void(0)" id="openSpeedTestMobile">
+              Speed Test
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/getConnection.html" class="mobile-btn">
+              Get New Connection
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/login.html" class="mobile-btn secondary">
+              Customer Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <section class="team-hero-bg team-hero-animate">
+      <div class="team-hero-bg-overlay"></div>
+
+      <img
+        src="../assets/img/our team/heroImage.jpg"
+        alt="NetFix Team"
+        class="team-hero-bg-img"
+      />
+
+      <div class="container team-hero-bg-content">
+        <span class="team-eyebrow">Careers at NetFix</span>
+        <h1>Build the Future of Connectivity</h1>
+        <p>
+          Join a team of engineers, innovators, and problem-solvers working to
+          deliver reliable, high-speed broadband experiences across India.
+        </p>
+      </div>
+    </section>
+
+    <section class="core-values-alt core-values-animate">
+      <div class="container">
+        <div class="core-values-header animate-heading">
+          <h2>Our Core Values</h2>
+          <p>
+            The beliefs that define how we work, collaborate, and deliver
+            reliable connectivity every day.
+          </p>
+        </div>
+
+        <div class="values-list">
+          <div class="value-item animate-item">
+            <span class="accent"></span>
+            <div class="icon">🛡️</div>
+            <div class="content">
+              <h4>Integrity First</h4>
+              <p>
+                We operate with honesty, responsibility, and
+                transparency—earning trust through every action we take.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item animate-item">
+            <span class="accent"></span>
+            <div class="icon">🧠</div>
+            <div class="content">
+              <h4>Customer Commitment</h4>
+              <p>
+                Every decision begins with our users. We design services that
+                solve real problems and exceed expectations.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item animate-item">
+            <span class="accent"></span>
+            <div class="icon">⭐</div>
+            <div class="content">
+              <h4>Operational Excellence</h4>
+              <p>
+                From network reliability to support, we focus on consistent,
+                high-quality performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item animate-item">
+            <span class="accent"></span>
+            <div class="icon">🗣️</div>
+            <div class="content">
+              <h4>Open Communication</h4>
+              <p>
+                We encourage clarity, feedback, and collaboration across all
+                teams.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item animate-item">
+            <span class="accent"></span>
+            <div class="icon">🌱</div>
+            <div class="content">
+              <h4>Continuous Growth</h4>
+              <p>
+                We invest in learning, improvement, and long-term skill
+                development.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item animate-item">
+            <span class="accent"></span>
+            <div class="icon">❤️</div>
+            <div class="content">
+              <h4>Empathy & Respect</h4>
+              <p>
+                We listen, understand, and build solutions that genuinely serve
+                people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="leadership-v2 leadership-v2-animate">
+      <div class="container">
+        <!-- Header -->
+        <div class="leadership-v2-header animate-heading">
+          <h2>Leadership Team</h2>
+          <p>
+            The minds shaping our technology, operations, and customer
+            experience.
+          </p>
+        </div>
+
+        <!-- Slider -->
+        <div class="leadership-v2-slider">
+          <div class="leadership-v2-track">
+            <!-- Slide 1 -->
+            <div class="leadership-v2-slide active animate-slide">
+              <img src="../assets/img/our team/person-2.jpg" alt="Leader" />
+
+              <h3>Amit Verma</h3>
+              <span>Chief Technology Officer</span>
+
+              <p>
+                Amit drives NetFix’s fiber infrastructure and network
+                innovation, ensuring blazing-fast speeds and near-zero downtime.
+              </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="leadership-v2-slide animate-slide">
+              <img src="../assets/img/our team/peron-3.jpg" alt="Leader" />
+
+              <h3>Neha Sharma</h3>
+              <span>Head of Customer Experience</span>
+
+              <p>
+                Neha leads customer-first strategies, building fast local
+                support systems and seamless service journeys.
+              </p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="leadership-v2-slide animate-slide">
+              <img src="../assets/img/our team/person-1.jpg" alt="Leader" />
+
+              <h3>Rohit Malhotra</h3>
+              <span>Director – Operations</span>
+
+              <p>
+                Rohit oversees on-ground execution, ensuring same-day
+                installations and reliable service delivery across cities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="leadership-v2-controls">
+            <button id="leaderPrev">‹</button>
+            <button id="leaderNext">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="careers-openings careers-animate">
+      <div class="container">
+        <!-- Header -->
+        <div class="openings-header animate-head">
+          <h2>Current Openings</h2>
+          <p>
+            Explore opportunities to grow with NetFix. If nothing matches right
+            now, check back soon—we’re always growing.
+          </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="openings-filters animate-filters">
+          <select disabled>
+            <option>Select Job Title</option>
+          </select>
+
+          <select disabled>
+            <option>Select Function</option>
+          </select>
+
+          <select disabled>
+            <option>Select Location</option>
+          </select>
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div class="openings-empty animate-empty">
+          <div class="empty-icon">📄</div>
+          <h3>No Current Openings</h3>
+          <p>
+            We don’t have any active roles at the moment, but exciting
+            opportunities are on the way. Stay connected with us!
+          </p>
+
+          <a href="./contact.html" class="empty-btn"> Contact HR Team </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-top">
+          <!-- Brand Details -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="footer-logo mb-4">
+              <div class="logo-box">
+                <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+              </div>
+            </div>
+
+            <p class="footer-desc">
+              Gurugram's trusted fiber broadband network. Connecting homes and
+              businesses with fast, reliable, and future-ready internet.
+            </p>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+              <a href="#"><img src="../assets/svgs/facebook.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/insta.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/linkedin.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/twitter.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/broadband-plans.html">Broadband Plans</a>
+              </li>
+              <li><a href="../pages/about.html">Why NetFix</a></li>
+              <li><a href="../pages/productDetails.html">Our Team</a></li>
+              <li><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">Pay Bill Online</a></li>
+              <li><a href="#">Raise a Ticket</a></li>
+              <li><a href="#">Track Request</a></li>
+              <li><a href="../pages/contact.html">Contact Us</a></li>
+              <li><a href="../pages/faq.html">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Contact Us</h5>
+            <ul class="footer-contact">
+              <li>
+                <span class="icon">📍</span>
+                <span>
+                  Cyber City, DLF Phase 3,<br />
+                  Gurugram, Haryana 122002
+                </span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span>+91 7011987504</span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span>info@nextplaybroadband.in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            © 2026 NetFix Broadband Pvt Ltd. All rights reserved.
+          </div>
+
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="account-modal" id="accountModal">
+      <div class="account-backdrop"></div>
+
+      <div class="account-box">
+        <h5 class="account-title">My Account</h5>
+
+        <a href="../pages/faq.html" class="account-btn secondary"> FAQ </a>
+
+        <a href="../pages/contact.html" class="account-btn secondary">
+          Contact Us
+        </a>
+
+        <a href="../pages/login.html" class="account-btn secondary">
+          Customer Login
+        </a>
+
+        <a href="../pages/getConnection.html" class="account-btn primary">
+          Get New Connection
+        </a>
+      </div>
+    </div>
+
+    <!-- SPEED TEST MODAL -->
+    <div class="speedtest-modal" id="speedTestModal">
+      <div class="speedtest-backdrop"></div>
+
+      <div class="speedtest-box">
+        <!-- Header -->
+        <div class="speedtest-header">
+          <h3>Internet Speed Test</h3>
+          <button class="speedtest-close" id="closeSpeedTest">&times;</button>
+        </div>
+
+        <!-- Content -->
+        <div class="speedtest-content">
+          <iframe
+            src="https://speed.cloudflare.com/"
+            loading="lazy"
+            title="Speed Test"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

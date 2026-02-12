@@ -1,0 +1,170 @@
+.connection-section {
+  background: #ffffff;
+}
+
+.connection-form-header h2{
+    color: #f11325;
+    font-weight: 700;
+
+}
+.connection-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+}
+
+.connection-title span {
+  color: #f11325;
+}
+
+.connection-desc {
+  margin-top: 16px;
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 420px;
+}
+
+.connection-features {
+  margin-top: 32px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.connection-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.connection-features span {
+  color: #f11325;
+  font-weight: 700;
+}
+
+.connection-form-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 600px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.connection-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.connection-form input,
+.connection-form select {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  padding: 0 14px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.connection-form input:focus,
+.connection-form select:focus {
+  border-color: #f11325;
+  box-shadow: 0 0 0 2px rgba(241, 19, 37, 0.25);
+}
+
+.connection-btn {
+  width: 100%;
+  height: 48px;
+  background: #f11325;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.connection-btn:hover {
+  background: #d90f20;
+  box-shadow: 0 10px 25px rgba(241, 19, 37, 0.35);
+}
+
+.connection-note {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* Animation */
+.anim-title,
+.anim-text,
+.anim-features li {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.connection-left-anim.show .anim-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.connection-left-anim.show .anim-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease 0.2s;
+}
+
+.connection-left-anim.show .anim-features li {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+.connection-left-anim.show .anim-features li:nth-child(1) { transition-delay: 0.4s; }
+.connection-left-anim.show .anim-features li:nth-child(2) { transition-delay: 0.5s; }
+.connection-left-anim.show .anim-features li:nth-child(3) { transition-delay: 0.6s; }
+.connection-left-anim.show .anim-features li:nth-child(4) { transition-delay: 0.7s; }
+
+
+.connection-form-anim {
+  opacity: 0;
+  transform: scale(0.95) translateY(40px);
+}
+
+.connection-form-anim.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: all 0.9s ease;
+}
+
+.connection-form-anim .mb-3,
+.connection-form-anim .mb-4,
+.connection-form-anim button,
+.connection-note {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.connection-form-anim.show .mb-3,
+.connection-form-anim.show .mb-4,
+.connection-form-anim.show button,
+.connection-form-anim.show .connection-note {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+.connection-form-anim.show .mb-3:nth-child(1) { transition-delay: 0.2s; }
+.connection-form-anim.show .mb-3:nth-child(2) { transition-delay: 0.3s; }
+.connection-form-anim.show .mb-3:nth-child(3) { transition-delay: 0.4s; }
+.connection-form-anim.show .mb-4 { transition-delay: 0.5s; }
+.connection-form-anim.show button { transition-delay: 0.6s; }
+.connection-form-anim.show .connection-note { transition-delay: 0.7s; }

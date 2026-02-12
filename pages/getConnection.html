@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Next Play Broadband</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Custom Theme -->
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+    <link rel="stylesheet" href="../assets/css/getConnection.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </head>
+  <body data-page="getConnection">
+    <!-- Loader -->
+    <div id="page-loader">
+      <img src="../assets/img/preloader.gif" alt="Loading" />
+    </div>
+
+    <!-- Navbar -->
+     <header class="site-header sticky-top">
+      <nav class="navbar-custom">
+        <div
+          class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between"
+        >
+          <!-- LOGO -->
+          <a href="../index.html" class="navbar-logo">
+            <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+          </a>
+
+          <!-- DESKTOP MENU -->
+          <ul class="nav-menu d-none d-lg-flex">
+            <li>
+              <a href="../index.html" class="nav-link-custom" data-page="index">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/broadband-plans.html"
+                class="nav-link-custom"
+                data-page="broadband-plans"
+              >
+                Broadband Plans
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/about.html"
+                class="nav-link-custom"
+                data-page="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/Infographic.html"
+                class="nav-link-custom"
+                data-page="Infographic"
+              >
+                InfoGraphic
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/ourTeam.html"
+                class="nav-link-custom"
+                data-page="ourTeam"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="nav-link-custom"
+                id="openSpeedTest"
+              >
+                Speed Test
+              </a>
+            </li>
+          </ul>
+
+           <!-- ACCOUNT ICON (DESKTOP ONLY) -->
+          <div class="d-none d-lg-flex account-wrapper" id="accountToggle">
+            <div class="account-icon-box">
+              <img src="../assets/svgs/account.svg" alt="Account" />
+            </div>
+
+            <div class="account-text">
+              <span class="account-title">Account</span>
+            </div>
+          </div>
+
+          <!-- HAMBURGER (MOBILE ONLY) -->
+          <button class="menu-btn d-lg-none" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE SLIDE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../pages/broadband-plans.html">Broadband Plans</a></li>
+
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+
+          <li><a href="../pages/Infographic.html">InfoGraphic</a></li>
+          <li>
+            <a
+              href="../pages/ourTeam.html"
+              class="nav-link-custom"
+              data-page="ourTeam"
+            >
+              Our Team
+            </a>
+          </li>
+
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+
+          <li>
+            <a href="javascript:void(0)" id="openSpeedTestMobile">
+              Speed Test
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/getConnection.html" class="mobile-btn">
+              Get New Connection
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/login.html" class="mobile-btn secondary">
+              Customer Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <section class="connection-section my-5 ">
+      <div
+        class="container min-vh-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="row w-100 align-items-center g-5">
+          <!-- LEFT CONTENT -->
+          <div class="col-lg-6 d-none d-lg-block connection-left-anim">
+            <h1 class="connection-title anim-title">
+              Get Connected with <span>NetFix Fiber</span>
+            </h1>
+
+            <p class="connection-desc anim-text">
+              Experience ultra-fast fiber broadband in Gurugram with same-day
+              installation, transparent pricing, and local support.
+            </p>
+
+            <ul class="connection-features anim-features">
+              <li><span>✔</span> 100% Fiber-to-the-Home connectivity</li>
+              <li><span>✔</span> Same-day installation available</li>
+              <li><span>✔</span> Local Gurugram support team</li>
+              <li><span>✔</span> Premium OTT bundles with plans</li>
+            </ul>
+          </div>
+
+          <!-- FORM -->
+          <div class="col-lg-6">
+            <div class="connection-form-card mx-auto connection-form-anim">
+              <div class="connection-form-header text-center mb-4">
+                <h2>Request a New Connection</h2>
+                <p>Fill in your details and our team will call you shortly</p>
+              </div>
+
+              <form id="connectionForm" class="connection-form">
+                <div class="mb-3">
+                  <label>Full Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label>Mobile Number</label>
+                  <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Enter 10-digit mobile number"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label>Sector (Gurugram)</label>
+                  <select name="sector" required>
+                    <option value="">Select your sector</option>
+                    <option>Sector 14</option>
+                    <option>Sector 29</option>
+                    <option>Sector 45</option>
+                    <option>Sector 56</option>
+                    <option>DLF Phase 3</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label>Preferred Speed</label>
+                  <select name="speed" required>
+                    <option value="">Select speed</option>
+                    <option>200 Mbps</option>
+                    <option>300 Mbps</option>
+                    <option>400 Mbps</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="connection-btn">
+                  Check Availability
+                </button>
+              </form>
+
+              <p class="connection-note">
+                By submitting, you agree to receive a call from NetFix
+                Broadband. No spam. No hidden charges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-top">
+          <!-- Brand Details -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="footer-logo mb-4">
+              <div class="logo-box">
+                <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+              </div>
+            </div>
+
+            <p class="footer-desc">
+              Gurugram's trusted fiber broadband network. Connecting homes and
+              businesses with fast, reliable, and future-ready internet.
+            </p>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+              <a href="#"><img src="../assets/svgs/facebook.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/insta.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/linkedin.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/twitter.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/broadband-plans.html">Broadband Plans</a>
+              </li>
+              <li><a href="../pages/about.html">Why NetFix</a></li>
+              <li><a href="../pages/productDetails.html">Our Team</a></li>
+              <li><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">Pay Bill Online</a></li>
+              <li><a href="#">Raise a Ticket</a></li>
+              <li><a href="#">Track Request</a></li>
+              <li><a href="../pages/contact.html">Contact Us</a></li>
+              <li><a href="../pages/faq.html">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Contact Us</h5>
+            <ul class="footer-contact">
+              <li>
+                <span class="icon">📍</span>
+                <span>
+                  Cyber City, DLF Phase 3,<br />
+                  Gurugram, Haryana 122002
+                </span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span>+91 7011987504</span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span>info@nextplaybroadband.in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            © 2026 NetFix Broadband Pvt Ltd. All rights reserved.
+          </div>
+
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="account-modal" id="accountModal">
+      <div class="account-backdrop"></div>
+
+      <div class="account-box">
+        <h5 class="account-title">My Account</h5>
+
+        <a href="../pages/faq.html" class="account-btn secondary"> FAQ </a>
+
+        <a href="../pages/contact.html" class="account-btn secondary">
+          Contact Us
+        </a>
+
+        <a href="../pages/login.html" class="account-btn secondary">
+          Customer Login
+        </a>
+
+        <a href="../pages/getConnection.html" class="account-btn primary">
+          Get New Connection
+        </a>
+      </div>
+    </div>
+
+    <!-- SPEED TEST MODAL -->
+    <div class="speedtest-modal" id="speedTestModal">
+      <div class="speedtest-backdrop"></div>
+
+      <div class="speedtest-box">
+        <!-- Header -->
+        <div class="speedtest-header">
+          <h3>Internet Speed Test</h3>
+          <button class="speedtest-close" id="closeSpeedTest">&times;</button>
+        </div>
+
+        <!-- Content -->
+        <div class="speedtest-content">
+          <iframe
+            src="https://speed.cloudflare.com/"
+            loading="lazy"
+            title="Speed Test"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

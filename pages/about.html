@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Next Play Broadband</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Custom Theme -->
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
+  </head>
+  <body data-page="about">
+    <!-- Loader -->
+    <div id="page-loader">
+      <img src="../assets/img/preloader.gif" alt="Loading" />
+    </div>
+
+    <!-- Navbar -->
+    <header class="site-header sticky-top">
+      <nav class="navbar-custom">
+        <div
+          class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between"
+        >
+          <!-- LOGO -->
+          <a href="../index.html" class="navbar-logo">
+            <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+          </a>
+
+          <!-- DESKTOP MENU -->
+          <ul class="nav-menu d-none d-lg-flex">
+            <li>
+              <a href="../index.html" class="nav-link-custom" data-page="index">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/broadband-plans.html"
+                class="nav-link-custom"
+                data-page="broadband-plans"
+              >
+                Broadband Plans
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/about.html"
+                class="nav-link-custom"
+                data-page="about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/Infographic.html"
+                class="nav-link-custom"
+                data-page="Infographic"
+              >
+                InfoGraphic
+              </a>
+            </li>
+            <li>
+              <a
+                href="../pages/ourTeam.html"
+                class="nav-link-custom"
+                data-page="ourTeam"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="nav-link-custom"
+                id="openSpeedTest"
+              >
+                Speed Test
+              </a>
+            </li>
+          </ul>
+
+          <!-- ACCOUNT ICON (DESKTOP ONLY) -->
+          <div class="d-none d-lg-flex account-wrapper" id="accountToggle">
+            <div class="account-icon-box">
+              <img src="../assets/svgs/account.svg" alt="Account" />
+            </div>
+
+            <div class="account-text">
+              <span class="account-title">Account</span>
+            </div>
+          </div>
+
+          <!-- HAMBURGER (MOBILE ONLY) -->
+          <button class="menu-btn d-lg-none" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE SLIDE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../pages/broadband-plans.html">Broadband Plans</a></li>
+
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+
+          <li><a href="../pages/Infographic.html">InfoGraphic</a></li>
+          <li>
+            <a
+              href="../pages/ourTeam.html"
+              class="nav-link-custom"
+              data-page="ourTeam"
+            >
+              Our Team
+            </a>
+          </li>
+
+          <li><a href="../pages/contact.html">Contact Us</a></li>
+
+          <li>
+            <a href="javascript:void(0)" id="openSpeedTestMobile">
+              Speed Test
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/getConnection.html" class="mobile-btn">
+              Get New Connection
+            </a>
+          </li>
+
+          <li>
+            <a href="../pages/login.html" class="mobile-btn secondary">
+              Customer Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <!-- Heading -->
+    <div class="about-hero">
+      <div class="container">
+        <div class="about-header text-center reveal-about-hero">
+          <!-- Badge -->
+          <span class="about-hero-badge about-anim-badge">
+            Gurugram’s Trusted Fiber Network
+          </span>
+
+          <!-- Heading -->
+          <h1 class="about-anim-title">About <span>NetFix Fiber Broadband</span></h1>
+
+          <!-- Divider -->
+          <div class="about-hero-divider about-anim-divider"></div>
+
+          <!-- Description -->
+          <p class="about-anim-desc">
+            NetFix is a next-generation fiber broadband provider focused
+            exclusively on Gurugram. We combine cutting-edge fiber
+            infrastructure, local support, and customer-first service to deliver
+            internet you can truly rely on — fast, stable, and built for modern
+            digital life.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about-page">
+      <div class="container">
+        <!-- Built for Modern Life -->
+        <div class="row align-items-center about-split about-reveal-v2">
+          <div class="col-lg-6 about-content about-v2-text">
+            <h2>Built for <span>Modern Digital Life</span></h2>
+
+            <p>
+              Today’s homes rely on the internet for everything — work,
+              entertainment, learning, and communication. NetFix Fiber Broadband
+              is engineered to support multiple devices and high-bandwidth usage
+              without slowdowns.
+            </p>
+
+            <p>
+              Whether you're working from home, gaming online, streaming 4K
+              content, or managing a smart home, our
+              <strong>100% fiber-to-the-home network</strong>
+              delivers consistent speeds, ultra-low latency, and reliable
+              performance — even during peak hours.
+            </p>
+          </div>
+
+          <div class="col-lg-6 about-v2-media">
+            <div class="about-image-wrapper position-relative">
+              <img
+                src="../assets/img/Banner/wifiBanner.jpg"
+                alt="Fiber Network"
+                class="about-image"
+              />
+              <div class="about-image-badge">
+                Seamless Connectivity for Modern Homes
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Gurugram Chooses -->
+        <div id="about" class="about-section about-animate">
+          <div class="container text-center">
+            <!-- Heading -->
+            <div class="d-flex justify-content-center">
+              <h2 class="about-title about-animate-title">
+                Why Gurugram Chooses NetFix Fiber Broadband
+              </h2>
+            </div>
+
+            <p class="about-subtitle about-animate-subtitle">
+              We don't just provide internet.
+              <span>
+                We deliver Trusted speed, Local support, Modern performance.
+              </span>
+            </p>
+
+            <!-- Cards -->
+            <div class="row g-4 mt-5">
+              <!-- Card 1 -->
+              <div class="col-sm-6 col-lg-3">
+                <div class="about-card about-animate-card">
+                  <div class="about-icon">
+                    <img
+                      src="../assets/svgs/lightning.svg"
+                      alt="Fiber Connectivity"
+                    />
+                  </div>
+
+                  <h3>Fiber Connectivity</h3>
+
+                  <p>
+                    100% fiber-to-home internet with consistent speeds,
+                    near-zero downtime, and buffer-free streaming even at peak
+                    hours.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-sm-6 col-lg-3">
+                <div class="about-card about-animate-card">
+                  <div class="about-icon">
+                    <img
+                      src="../assets/svgs/Customer-Support.svg"
+                      alt="Local Support"
+                    />
+                  </div>
+
+                  <h3>Local Support</h3>
+
+                  <p>
+                    No call centers. No bots. Just real Gurugram experts
+                    resolving your issues in minutes.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-sm-6 col-lg-3">
+                <div class="about-card about-animate-card">
+                  <div class="about-icon">
+                    <img
+                      src="../assets/svgs/performance.svg"
+                      alt="Performance"
+                    />
+                  </div>
+
+                  <h3>Performance</h3>
+
+                  <p>
+                    Built for gamers, streamers, and professionals — ultra-low
+                    ping, fast uploads, and crystal-clear video calls.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-sm-6 col-lg-3">
+                <div class="about-card about-animate-card">
+                  <div class="about-icon">
+                    <img
+                      src="../assets/svgs/clock.svg"
+                      alt="Installation Time"
+                    />
+                  </div>
+
+                  <h3>Installation in Hours</h3>
+
+                  <p>
+                    Book before noon and get connected the same day fast setup,
+                    transparent pricing, zero installation hassle.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div id="reviews" class="reviews-section reveal-reviews">
+          <div class="reviews-header text-center">
+            <h2>What Gurugram Residents Say About <span>NetFix</span></h2>
+            <p>
+              Trusted by families, professionals, and gamers across Gurugram for
+              fast speeds, stable connections, and reliable local support.
+            </p>
+          </div>
+
+          <div class="row g-4 reveal-stagger">
+            <!-- Review 1 -->
+            <div class="col-12 col-md-6 col-lg-4 review-reveal">
+              <div class="review-card h-100">
+                <div class="review-stars">
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                </div>
+                <p class="review-text">
+                  “Switched from a national ISP to NetFix and the difference is
+                  huge. Speeds are consistent even during peak hours. Gaming
+                  ping is excellent.”
+                </p>
+                <div class="review-author mt-auto">
+                  <p class="name">Rahul Sharma</p>
+                  <p class="location">Sector 56, Gurugram</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="col-12 col-md-6 col-lg-4 review-reveal">
+              <div class="review-card h-100">
+                <div class="review-stars">
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                </div>
+                <p class="review-text">
+                  “The local support is the best part. My connection issue was
+                  resolved the same day. No bots, no waiting — just real
+                  engineers.”
+                </p>
+                <div class="review-author mt-auto">
+                  <p class="name">Neha Verma</p>
+                  <p class="location">DLF Phase 3, Gurugram</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="col-12 col-md-6 col-lg-4 review-reveal">
+              <div class="review-card h-100">
+                <div class="review-stars">
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                  <img src="../assets/svgs/starReview.svg" />
+                </div>
+                <p class="review-text">
+                  “Using NetFix for work-from-home and OTT streaming. Zoom calls
+                  are crystal clear and Netflix never buffers.”
+                </p>
+                <div class="review-author mt-auto">
+                  <p class="name">Amit Gupta</p>
+                  <p class="location">Sector 45, Gurugram</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Rating -->
+          <div class="reviews-rating reveal-rating">
+            <div class="rating-box">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                alt="Google"
+              />
+              <span>
+                <strong>4.8/5</strong> rating based on
+                <strong>2,000+</strong> reviews
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row footer-top">
+          <!-- Brand Details -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="footer-logo mb-4">
+              <div class="logo-box">
+                <img src="../assets/img/logo/logo.png" alt="NetFix Logo" />
+              </div>
+            </div>
+
+            <p class="footer-desc">
+              Gurugram's trusted fiber broadband network. Connecting homes and
+              businesses with fast, reliable, and future-ready internet.
+            </p>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+              <a href="#"><img src="../assets/svgs/facebook.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/insta.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/linkedin.svg" alt="" /></a>
+              <a href="#"><img src="../assets/svgs/twitter.svg" alt="" /></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/broadband-plans.html">Broadband Plans</a>
+              </li>
+              <li><a href="../pages/about.html">Why NetFix</a></li>
+              <li><a href="../pages/productDetails.html">Our Team</a></li>
+              <li><a href="#">Speed Test</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">Pay Bill Online</a></li>
+              <li><a href="#">Raise a Ticket</a></li>
+              <li><a href="#">Track Request</a></li>
+              <li><a href="../pages/contact.html">Contact Us</a></li>
+              <li><a href="../pages/faq.html">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h5 class="footer-title">Contact Us</h5>
+            <ul class="footer-contact">
+              <li>
+                <span class="icon">📍</span>
+                <span>
+                  Cyber City, DLF Phase 3,<br />
+                  Gurugram, Haryana 122002
+                </span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span>+91 7011987504</span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span>info@nextplaybroadband.in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            © 2026 NetFix Broadband Pvt Ltd. All rights reserved.
+          </div>
+
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="account-modal" id="accountModal">
+      <div class="account-backdrop"></div>
+
+      <div class="account-box">
+        <h5 class="account-title">My Account</h5>
+
+        <a href="../pages/faq.html" class="account-btn secondary"> FAQ </a>
+
+        <a href="../pages/contact.html" class="account-btn secondary">
+          Contact Us
+        </a>
+
+        <a href="../pages/login.html" class="account-btn secondary">
+          Customer Login
+        </a>
+
+        <a href="../pages/getConnection.html" class="account-btn primary">
+          Get New Connection
+        </a>
+      </div>
+    </div>
+
+    <!-- SPEED TEST MODAL -->
+    <div class="speedtest-modal" id="speedTestModal">
+      <div class="speedtest-backdrop"></div>
+
+      <div class="speedtest-box">
+        <!-- Header -->
+        <div class="speedtest-header">
+          <h3>Internet Speed Test</h3>
+          <button class="speedtest-close" id="closeSpeedTest">&times;</button>
+        </div>
+
+        <!-- Content -->
+        <div class="speedtest-content">
+          <iframe
+            src="https://speed.cloudflare.com/"
+            loading="lazy"
+            title="Speed Test"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
