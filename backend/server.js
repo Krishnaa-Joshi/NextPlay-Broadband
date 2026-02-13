@@ -36,7 +36,10 @@ app.post("/api/get-connection", async (req, res) => {
       from: process.env.EMAIL_USER,
       to: process.env.COMPANY_EMAIL,
       subject: "New Request",
-      html: `<p>Name: ${name}</p>`
+      html: `<p>Name: ${name}</p>
+      <p>Mobile Number: ${mobile}</p>
+      <p>Sector: ${sector}</p>
+      <p>Preferred Speed: ${speed}</p>`
     });
 
     res.status(200).json({ message: "Success" });
