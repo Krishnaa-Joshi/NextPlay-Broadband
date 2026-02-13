@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const API_BASE = "https://next-play-backend.vercel.app";
+    const API_BASE = "https://next-play-broadband.vercel.app";
 
     try {
       const res = await fetch(`${API_BASE}/api/get-connection`, {
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     try {
-       const API_BASE = "https://next-play-backend.vercel.app";
+       const API_BASE = "https://next-play-broadband.vercel.app";
       const res = await fetch(`${API_BASE}/api/get-connection`, {
         method: "POST",
         headers: {
